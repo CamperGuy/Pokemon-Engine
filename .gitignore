@@ -24,3 +24,6 @@ hs_err_pid*
 
 # The .idea folder
 .idea/
+
+# Any iml files
+*.iml
