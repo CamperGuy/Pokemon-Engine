@@ -1,4 +1,4 @@
 package Pokemon;
 
-public static class PKMN_Descriptive {
+public class PKMN_Descriptive {
 }
