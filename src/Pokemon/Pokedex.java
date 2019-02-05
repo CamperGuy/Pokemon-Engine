@@ -2,6 +2,7 @@ package Pokemon;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ArrayList;
 
 /**
  * A Class containing a central database of all Pokemons registered
@@ -92,5 +93,19 @@ public class Pokedex {
             database.remove(id);
         else
             System.out.println("Pokedex.removePokemon("+ id +")\nThe ID is not associated with a Pokemon!");
+    }
+
+    public static void readPokedex(String file){
+        ArrayList<Integer> indexes = new ArrayList<>();
+        ArrayList<PKMN_Descriptive> pokemons = new ArrayList<>();
+
+        Iterator indexIT = Parser.readHashMapFile(file).keySet().iterator();
+        Iterator pkmnIT = Parser.readHashMapFile(file).values().iterator();
+        while (indexIT.hasNext()){
+            indexes.add(Integer.parseInt(indexIT.next().toString()));
+        }
+        while (pkmnIT.hasNext()){
+            pokemons.add()
+        }
     }
 }
