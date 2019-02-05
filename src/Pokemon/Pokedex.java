@@ -95,6 +95,7 @@ public class Pokedex {
             System.out.println("Pokedex.removePokemon("+ id +")\nThe ID is not associated with a Pokemon!");
     }
 
+
     public static void readPokedex(String file){
         ArrayList<Integer> indexes = new ArrayList<>();
         ArrayList<PKMN_Descriptive> pokemons = new ArrayList<>();
